@@ -1,7 +1,7 @@
 var wowsk_typingLibrary_type;
 var wowsk_typingLibrary_on=0;
 function typeWords(wordsToType,el) {
-  el.textContent+=wordsToType[wowsk_typingLibrary_on];
+  el.innerHTML+=wordsToType[wowsk_typingLibrary_on];
   wowsk_typingLibrary_on++;
   if(wowsk_typingLibrary_on===wordsToType.length) 
     window.clearInterval(wowsk_typingLibrary_type);
